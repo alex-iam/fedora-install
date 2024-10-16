@@ -2,6 +2,8 @@ autoload -Uz compinit
 compinit
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+# Completions
+zstyle ':completion:*' rehash true
 
 # History
 HISTSIZE=5000
