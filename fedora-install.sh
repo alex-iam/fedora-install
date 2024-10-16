@@ -29,6 +29,7 @@ sudo npm install -g pyright
 echo ">>>emacs"
 sudo dnf install -y emacs
 echo ">>>Other langs"
+sudo dnf install -y ripgrep
 sudo dnf install -y clang
 echo ">>>VSCode"
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
