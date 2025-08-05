@@ -16,6 +16,7 @@ sudo dnf install -y adobe-source-code-pro-fonts
 source ./install-nerd-fonts JetBrainsMono
 source ./install-nerd-fonts SourceCodePro
 source ./aporetic.sh
+fc-cache -fv
 echo ">>>Shell"
 curl -sS https://starship.rs/install.sh | sh
 source ./zsh-install.sh
