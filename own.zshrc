@@ -18,12 +18,13 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
-# A
+
 alias ls='ls --color'
 
-# Pyenv
-PYENV_ROOT=$HOME/.pyenv
-path+=$PYENV_ROOT/bin
-eval "$(pyenv init -)"
 
-eval "$(starship init zsh)"
+source <(fzf --zsh)
+bindkey '^[[A' fzf-history-widget
+
+if [[ "$TERM" != "dumb" ]]; then
+  eval "$(starship init zsh)"
+fi
